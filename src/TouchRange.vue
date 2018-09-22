@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     emit(val) {
-      this.$emit('input', Number(val))
+      this.$emit('input', parseInt(val))
     },
     touchmove(e) {
       e.preventDefault()
