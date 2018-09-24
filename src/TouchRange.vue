@@ -1,11 +1,13 @@
 <template>
   <input
-    type="range"
     :step="step"
     :min="min"
     :max="max"
     :disabled="disabled"
     :value="value"
+    :base="base"
+    :precision="precision"
+    type="range"
     @input="emit($event.target.value)"
     @touchmove="touchmove"
     @touchstart="touchmove"
