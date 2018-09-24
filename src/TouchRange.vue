@@ -19,6 +19,8 @@ export default {
     value: { type: Number, default: 0 },
     min: { type: Number, default: 0 },
     max: { type: Number, default: 1 },
+    base: { type: Number, default: 10 },
+    precision: { type: Number, default: 0 },
     step: { type: [Number, String], default: 'any' },
     disabled: { type: Boolean, default: false }
   },
@@ -29,7 +31,7 @@ export default {
   },
   methods: {
     emit(val) {
-      this.$emit('input', parseInt(val))
+      this.$emit('input', Math.round(val * Math.pow(this.base, this.precision)) / Math.pow(this.base, this.precision))
     },
     touchmove(e) {
       e.preventDefault()

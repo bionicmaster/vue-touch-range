@@ -1,6 +1,6 @@
 {
-  "name": "@bionicmaster/vue-touch-range-integer",
-  "version": "1.0.0",
+  "name": "vue-touch-range-integer",
+  "version": "1.0.2",
   "description": "Touch extension of input-range element",
   "main": "dist/vue-touch-range.cjs.js",
   "scripts": {
@@ -19,16 +19,28 @@
     "homepage": "./"
   },
   "bili": {
-    "format": ["cjs", "umd"],
+    "format": [
+      "cjs",
+      "umd"
+    ],
     "name": "vue-touch-range",
-    "plugins": ["vue"]
+    "plugins": [
+      "vue"
+    ]
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bionicmaster/vue-touch-range.git"
   },
-  "keywords": ["vue", "touch", "range", "slider"],
+  "keywords": [
+    "vue",
+    "touch",
+    "range",
+    "slider"
+  ],
   "author": "Masaya Kazama <miyan@t-p.jp>",
   "license": "MIT",
   "bugs": {
